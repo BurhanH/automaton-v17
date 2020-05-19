@@ -1,0 +1,12 @@
+os: linux
+dist: xenial
+
+language: python
+cache: pip
+
+python:
+  - "3.6"
+  - "3.7"
+
+script:
+    - python -m unittest discover tests "*.py" -v
