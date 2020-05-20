@@ -1,5 +1,5 @@
 # automaton-v17
-Chatbot auto-testing - an examle. Used 2 diferent chatbot implementations from this arcticle ['A Chatbot in Python using nltk'](https://medium.com/swlh/a-chatbot-in-python-using-nltk-938a37a9eacc)
+Chatbot auto-testing - an examle. Used 2 diferent chatbot implementations from this article ['A Chatbot in Python using nltk'](https://medium.com/swlh/a-chatbot-in-python-using-nltk-938a37a9eacc)
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v17/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/automaton-v17.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v17)
