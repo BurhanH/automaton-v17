@@ -40,10 +40,11 @@ The approach is pretty forward, our chatbot is a simple app (or function) that g
 We may verify that our chatbots are working, they are answering to our requests, but there is a big question - are these answers correct?
 
 ## Analysis
-After a few runs I realized, [first chatbot, BOW implementation](https://github.com/BurhanH/automaton-v17/blob/master/source/bot.py#L85), for some reasons has 2 failures. One is an Error - an exception for a negative test where I put integer number into chatbot (not a string value which represents an integer), and the second one a Failure - by some reason a test gets a different response from chatbot then expected. [Check live example in Travis CI here](https://travis-ci.org/github/BurhanH/automaton-v17/jobs/689282503) <br>
+After a few runs I realized, [first chatbot, BOW implementation](https://github.com/BurhanH/automaton-v17/blob/master/source/bot.py#L85), for some reasons has 2 failures. One is an Error - an exception for a negative test where I put integer number into chatbot (not a string value which represents an integer), and the second one a Failure - by some reason a test gets a different response from chatbot then expected. [Check live example in Travis CI here](https://travis-ci.org/github/BurhanH/automaton-v17/jobs/689426109) <br>
 The [second chatbot, tfidf implementation](https://github.com/BurhanH/automaton-v17/blob/master/source/bot.py#L50), passes all tests but it doesn't mean this implementation has no errors!
 
-![alt text](https://github.com/BurhanH/automaton-v17/raw/master/screenshots/failed.png "Failures automation-v17") <br>
+![alt text](https://github.com/BurhanH/automaton-v17/raw/master/screenshots/test_run.png "Test run automation-v17") <br>
+![alt text](https://github.com/BurhanH/automaton-v17/raw/master/screenshots/failures.png "Failures automation-v17") <br>
 
 ## Enhancement (or TODOs)
 Chatbots: Fix chatbot bow (all tests should pass!). [Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring). Use the [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming) approach. <br>
