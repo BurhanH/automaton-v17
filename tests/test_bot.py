@@ -3,9 +3,8 @@ from source import bot
 
 
 class TestBotBow(unittest.TestCase):
-    """
-    Simple test suite to test bot bow responses. Should be data driven.
-    """
+    "Simple test suite to test bot bow responses. Should be data driven."
+
     def test_greeting(self) -> None:
         data = {
             'sentence': 'Hi!',
@@ -92,9 +91,8 @@ class TestBotBow(unittest.TestCase):
 
 
 class TestBotTfidf(unittest.TestCase):
-    """
-    Simple test suite to test bot tfidf responses. Should be data driven.
-    """
+    "Simple test suite to test bot tfidf responses. Should be data driven."
+
     def test_greeting(self) -> None:
         data = {
             'sentence': 'Hi!',
