@@ -13,6 +13,24 @@ I found a good sample of a chatbot (article ['A Chatbot in Python using nltk'](h
 Then we need somehow to prepare this code to work, which I did first in my local machine in [Jupiter Lab](https://jupyterlab.readthedocs.io/en/stable/) with [IPython kernel](https://ipython.org/). When I finished with 'raw' versions of chatbots I created a virtual environment and added necessary files and the repository structure. After that, I added a few simple tests (used [unittest](https://docs.python.org/3/library/unittest.html) testing framework) for each chatbot implementation. Made first run. Then added 'boundary' tests, and few negative tests to see how those implementations will behave for the same test data. Then I created necessary files to publish this repository in [GitHub](https://github.com/) and made integration with [Travis CI](https://travis-ci.org/).
 
 ## The structure and approach
+
+```text
+-- automaton-v17
+   |-- .gitignore
+   |-- .travis.yml
+   |-- LICENSE
+   |-- README.md
+   |-- requirements.txt
+   `-- data
+       |-- dialog_talk_agent.xlsx
+   `-- source
+       |-- bot.py
+   `-- tests
+       |-- test_bot.py
+   `-- screenshots
+       |-- failed.png
+```
+
 As you can see, in the current repository I put the data file into an independent folder. In a real application, it should be [a database](https://en.wikipedia.org/wiki/Database) or [API](https://en.wikipedia.org/wiki/Application_programming_interface) for data. <br>
 The Source folder contains the actual code for chatbots. Definitely this code can be improved and refactored. Some ideas I will explain in the Analysis and Enhancement sections. <br>
 And the third one is a folder that contains actual tests. Those autotests should be improved and refactored too. <br>
