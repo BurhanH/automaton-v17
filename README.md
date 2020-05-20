@@ -28,8 +28,8 @@ The [second chatbot, tfidf implementation](https://github.com/BurhanH/automaton-
 ![alt text](https://github.com/BurhanH/automaton-v17/raw/master/screenshots/failed.png "Failures automation-v17") <br>
 
 ## Enhancement (or TODOs)
-Chatbots: Fix chatbot bow (all tests should pass!). Code refactoring. Use the OOP approach. <br>
-Tests: Make them data-driven. Use presets. Add more tests for better coverage.
+Chatbots: Fix chatbot bow (all tests should pass!). [Code refactoring](https://en.wikipedia.org/wiki/Code_refactoring). Use the [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming) approach. <br>
+Tests: Make them [data-driven](https://en.wikipedia.org/wiki/Data-driven_testing). Use presets. Add more tests for better [coverage](https://en.wikipedia.org/wiki/Fault_coverage).
 
 ## Conclusion
 In the first look, we may say - testing a chatbot is simple, but what if a chatbot a part of [UI](https://en.wikipedia.org/wiki/User_interface)? <br>
