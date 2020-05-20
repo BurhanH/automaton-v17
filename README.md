@@ -3,6 +3,7 @@ Chatbot auto-testing - an examle. Used 2 diferent chatbot implementations from t
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v17/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/automaton-v17.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v17)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a344de5afc2b424295c185167065f80d)](https://www.codacy.com/manual/BurhanH/automaton-v17?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BurhanH/automaton-v17&amp;utm_campaign=Badge_Grade)
 
 ## An idea and concept
 I was asked about my experience to test (verify) a chatbot. Honestly, I didn't have that experience before, and I decided to cover this small 'mistake' in this example. <br>
