@@ -27,7 +27,6 @@ The [second chatbot](https://github.com/BurhanH/automaton-v17/blob/master/source
 
 ![alt text](https://github.com/BurhanH/automaton-v17/raw/master/screenshots/failed.png "Failures automation-v17") <br>
 
-
 ## Enhancement
 Chatbots: Fix chatbot bow (all tests should pass!). Code refactoring. Use OOP approach. <br>
 Tests: Make them data-driven. Use presets. Add more tests for better coverage.
