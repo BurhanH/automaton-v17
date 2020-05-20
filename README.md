@@ -1,5 +1,5 @@
 # automaton-v17
-Chatbot auto-testing - an examle. Used 2 diferent chatbot implementations from this article ['A Chatbot in Python using nltk'](https://medium.com/swlh/a-chatbot-in-python-using-nltk-938a37a9eacc)
+Chatbot testing - an examle.
 
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/BurhanH/automaton-v17/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/BurhanH/automaton-v17.svg?branch=master)](https://travis-ci.org/BurhanH/automaton-v17)
@@ -9,7 +9,7 @@ Chatbot auto-testing - an examle. Used 2 diferent chatbot implementations from t
 I was asked about my experience to test (verify) a chatbot. Honestly, I didn't have that experience before, and I decided to cover this small 'mistake' in this example. <br>
 The concept is simple we need a chatbot implementation and an approach to verify chatbot behavior. Note - this is just an experiment, the author did it by scratch for learning. <br>
 
-I found a good sample of a chatbot (see the top sentence of this repository). <br>
+I found a good sample of a chatbot (article ['A Chatbot in Python using nltk'](https://medium.com/swlh/a-chatbot-in-python-using-nltk-938a37a9eacc)). <br>
 Then we need somehow to prepare this code to work, which I did first in my local machine in [Jupiter Lab](https://jupyterlab.readthedocs.io/en/stable/) with [IPython kernel](https://ipython.org/). When I finished with 'raw' versions of chatbots I created a virtual environment and added necessary files and repository structure. After that, I added a few simple tests (used [unittest](https://docs.python.org/3/library/unittest.html) testing framework) for each chatbot implementation. Made first run. Then added 'boundary' tests and few negative tests to see how those implementations will behave for the same test data. Then I created necessary files to publish this repository in GitHub and made integration with Travis CI.
 
 ## Structure and approach
