@@ -18,7 +18,7 @@ The Source folder contains the actual code for chatbots. Definitely this code ca
 And the third one is a folder that contains actual tests. Those autotests should be improved and refactored too. <br>
 Two last files in the root of this repository are configurations, one file for [Python](https://www.python.org/) to take care of external libraries and dependencies, and the second one configuration for [Travis CI](https://travis-ci.org/) to execute tests. That is all about structure. <br>
 
-The approach is pretty forward, our chatbot is a simple app (or function) that gets a sentence (a parameter) and returns the response as a sentence (an answer, a question, etc.). As you know I used the [unittest](https://docs.python.org/3/library/unittest.html) library to create simple tests like request->response because our chatbots only have input as a sentence and output as a response. Kind of 'black box testing', which is not true, we know implementation and how it works, but for this experiment it is ok. <br>
+The approach is pretty forward, our chatbot is a simple app (or function) that gets a sentence (a parameter) and returns the response as a sentence (an answer, a question, etc.). As you know I used the [unittest](https://docs.python.org/3/library/unittest.html) library to create simple tests like `request -> response` because our chatbots only have input as a sentence and output as a response. Kind of 'black box testing', which is not true, we know implementation and how it works, but for this experiment it is ok. <br>
 We may verify that our chatbots are working, they are answering to our requests, but there is a big question - are these answers correct?
 
 ## Analysis
