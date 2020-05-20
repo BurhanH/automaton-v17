@@ -24,7 +24,7 @@ We may verify that our chatbots are working, they are answering to our requests 
 After a few runs I realized, first chatbot implementation (TODO put a link here) for some reason has 2 failures. One is an Error - an exception for a negative test where I put integer number into chatbot (not a string value which is represent an integer), and the second one a Failure - by some reason a test gets a different response from chatbot then expected. <br>
 A second chatbot (TODO put a link here) passed all tests but it doesn't mean this implementation has no errors!
 
-![alt text](https://github.com/BurhanH/automaton-v17/raw/master/screenshot/failed.png "Failures automation-v17") <br>
+![alt text](https://github.com/BurhanH/automaton-v17/raw/master/screenshots/failed.png "Failures automation-v17") <br>
 
 
 ## Enhancement
