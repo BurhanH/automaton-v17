@@ -14,8 +14,8 @@ Then we need somehow to prepare this code to work, which I did first in my local
 As you can see in the current repository I put the data file into an independent folder. In a real application, it should be a database or API for data. <br>
 The source folder contains the actual code for chatbots. Definitely this code should be improved and refactored. Some ideas I will explain in the Analysis section. <br>
 And third one its a folder which contains actual tests. Those autotests should be improved and refactored too. <br>
-Two last files in the root of this repository, one file for Python to take care of external libraries and dependencies, and the second one config file for Travis CI to execute tests. <br>
-That is all about structure. <br>
+Two last files in the root of this repository, one file for Python to take care of external libraries and dependencies, and the second one config file for Travis CI to execute tests. That is all about structure. <br>
+
 An approach is simple our chatbot is a simple app (or function) that gets a sentence (a parameter) and returns the response as a sentence (an answer, a question, etc.). As you know I used the [unittest](https://docs.python.org/3/library/unittest.html) library to create simple tests like request->response because our chatbots only have input as a sentence and output as a response. <br>
 We may verify that our chatbots are working, they are answering to our requests but another big question is are these answers expected (are they correct?)?
 
