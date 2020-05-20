@@ -32,9 +32,11 @@ Chatbots: Fix chatbot bow (all tests should pass!). [Code refactoring](https://e
 Tests: Make them [data-driven](https://en.wikipedia.org/wiki/Data-driven_testing). Use presets. Add more tests for better [coverage](https://en.wikipedia.org/wiki/Fault_coverage).
 
 ## Conclusion
-In the first look, we may say - testing a chatbot is simple, but what if a chatbot a part of [UI](https://en.wikipedia.org/wiki/User_interface)? <br>
-How can we test end-to-end scenarios? <br>
-How can we verify chatbot responses properly for a decision tree in a complex scenario? <br>
+In the first look, we may say - testing a chatbot is simple. 
+ - But what if a chatbot a part of [UI](https://en.wikipedia.org/wiki/User_interface)? <br>
+ - How can we test end-to-end scenarios? <br>
+ - How can we verify chatbot responses properly for a decision tree in a complex scenario? <br>
+
 Probably I missing some questions, but these three are major for me. [IMHO](https://www.merriam-webster.com/dictionary/IMHO) <br>
 
 P/S: If you see an error or would like to ask any question feel free to reach out me ;)
