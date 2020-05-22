@@ -39,6 +39,9 @@ Two last files in the root of this repository are configurations, one file for [
 The approach is pretty forward, our chatbot is a simple app (or function) that gets a sentence (a parameter) and returns the response as a sentence (an answer, a question, etc.). As you know I used the [unittest](https://docs.python.org/3/library/unittest.html) library to create simple tests like `request -> response` because our chatbots only have input as a sentence and output as a response. Kind of 'black box testing', which is not true, we know implementation and how it works, but for this experiment it is ok. <br>
 We may verify that our chatbots are working, they are answering to our requests, but there is a big question - are these answers correct?
 
+## Tests
+[Tests](https://github.com/BurhanH/automaton-v17/blob/master/tests/test_bot.py) are simple. I devided them by responces - greeting, question, buy, and negaive. Each 'section' has own test and related dataset.
+
 ## Analysis
 After a few runs I realized, [first chatbot, BOW implementation](https://github.com/BurhanH/automaton-v17/blob/master/source/bot.py#L85), for some reasons has 2 failures. One is an Error - an exception for a negative test where I put integer number into chatbot (not a string value which represents an integer), and the second one a Failure - by some reason a test gets a different response from chatbot then expected. [Check live example in Travis CI here](https://travis-ci.org/github/BurhanH/automaton-v17/jobs/689426109) <br>
 The [second chatbot, tfidf implementation](https://github.com/BurhanH/automaton-v17/blob/master/source/bot.py#L50), passes all tests but it doesn't mean this implementation has no errors!
