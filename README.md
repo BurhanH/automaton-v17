@@ -40,7 +40,8 @@ The approach is pretty forward, our chatbot is a simple app (or function) that g
 We may verify that our chatbots are working, they are answering to our requests, but there is a big question - are these answers correct?
 
 ## Tests
-[Tests](https://github.com/BurhanH/automaton-v17/blob/master/tests/test_bot.py) are simple. I made two classes for tests. Each test class verifies specific chatbot implementation. In test class you may see tests that are driven by data (or dataset). For simplification I divided them by responses - greeting, question, bye, and negative. 
+[Tests](https://github.com/BurhanH/automaton-v17/blob/master/tests/test_bot.py) are simple. I made two classes for tests. Each test class verifies specific chatbot implementation. In test class you may see tests that are driven by data (or dataset). For simplification I divided them by responses - greeting, question, bye, and negative.
+The first three responses are a happy path. Most interesting is the negative test 'suite'. It contains 7 negative cases: the empty input, the input as an integer value, the input as a negative integer presented as a string value, special characters as the input, and the last three as a string (greeting) in different languages (Russian, Spanish, Chinese).
 
 ## Analysis
 After a few runs I realized, [first chatbot, BOW implementation](https://github.com/BurhanH/automaton-v17/blob/master/source/bot.py#L85), for some reasons has 2 failures. One is an Error - an exception for a negative test where I put integer number into chatbot (not a string value which represents an integer), and the second one a Failure - by some reason a test gets a different response from chatbot then expected. [Check live example in Travis CI here](https://travis-ci.org/github/BurhanH/automaton-v17/jobs/689426109) <br>
