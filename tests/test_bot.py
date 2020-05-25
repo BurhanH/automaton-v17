@@ -5,7 +5,7 @@ from source import bot
 
 @ddt
 class TestBotBow(unittest.TestCase):
-    """Simple test suite to test bot bow responses. Should be data driven."""
+    """Simple test suite to test bot bow responses."""
 
     @data(
         ('Hi!', 'Hey!'),
@@ -44,7 +44,7 @@ class TestBotBow(unittest.TestCase):
 
 @ddt
 class TestBotTfidf(unittest.TestCase):
-    """Simple test suite to test bot tfidf responses. Should be data driven."""
+    """Simple test suite to test bot tfidf responses."""
 
     @data(
         ('Hi!', 'Hey!'),
