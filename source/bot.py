@@ -23,9 +23,9 @@ def text_normalization(text: str) -> str:
     text = str(text).lower()
     char_text = re.sub(r'[^ a-z]', '', text)
     tokens = word_tokenize(char_text)
-    lema = wordnet.WordNetLemmatizer()
+    lemma = wordnet.WordNetLemmatizer()
     tags_list = pos_tag(tokens)
-    lema_words = []
+    lemma_words = []
     for token, pos_token in tags_list:
         if pos_token.startswith('V'):
             pos_val = 'v'
@@ -35,9 +35,9 @@ def text_normalization(text: str) -> str:
             pos_val = 'r'
         else:
             pos_val = 'n'
-        lema_token = lema.lemmatize(token, pos_val)
-        lema_words.append(lema_token)
-    return ' '.join(lema_words)
+        lemma_token = lemma.lemmatize(token, pos_val)
+        lemma_words.append(lemma_token)
+    return ' '.join(lemma_words)
 
 
 data_frame['lemmatized_text'] = data_frame['Context'].apply(text_normalization)
@@ -58,8 +58,8 @@ def chat_tfidf(text: str) -> str:
 def _stopword(text: str) -> str:
     tag_list = pos_tag(nltk.word_tokenize(text))
     stop = stopwords.words('english')
-    lema = wordnet.WordNetLemmatizer()
-    lema_word = []
+    lemma = wordnet.WordNetLemmatizer()
+    lemma_word = []
     for token, pos_token in tag_list:
         if token in stop:
             continue
@@ -71,9 +71,9 @@ def _stopword(text: str) -> str:
             pos_val = 'r'
         else:
             pos_val = 'n'
-        lema_token = lema.lemmatize(token, pos_val)
-        lema_word.append(lema_token)
-    return ' '.join(lema_word)
+        lemma_token = lemma.lemmatize(token, pos_val)
+        lemma_word.append(lemma_token)
+    return ' '.join(lemma_word)
 
 
 cv = CountVectorizer()
